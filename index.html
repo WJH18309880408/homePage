@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共享平台</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            -moz-user-select: none; /*火狐*/
+            -webkit-user-select: none; /*webkit浏览器*/
+            -ms-user-select: none; /*IE10*/
+            -khtml-user-select: none; /*早期浏览器*/
+            user-select: none;
+            /* padding-bottom:60px;  */
+        }
+        .header {
+            height: 50px;
+            width: 100%;
+            background: linear-gradient(to right, #a0d8f5, #92c8e1);
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: #333;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            z-index: 1000; 
+        }
+        .header-img {
+            width: auto; /* 设置图片宽度自适应 */
+            height: 37px; /* 设置图片高度 */
+            padding-left: 2px;
+        }
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 8%; 
+            margin-bottom: 120px;
+
+        }
+        .row1 {
+             display: flex;
+             justify-content: space-around;
+             padding-top: 15px;
+             padding-bottom: 80px;
+             height: 70px;
+             width: 60%;
+        } 
+        .row2 {
+             display: flex;
+             justify-content: space-around;
+             padding-top: 5%;
+             padding-bottom: 110px;
+             height: 70px;
+             width: 60%;
+        } 
+        .icon-box {
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex: 0 1 150px; /* 设置每个图标的基础宽度为200px，并允许缩放 */
+            max-width: 100%; /* 设置最大宽度 */
+        }
+        .icon-box img {
+            width: 100%; /* 使图标宽度自适应父元素 */
+            height: auto; /* 保持图标的宽高比 */
+            transition: transform 0.3s;
+            /* margin-bottom: 25px;  */
+        }
+        .icon-box:hover img {
+            transform: scale(1.2);
+        }
+        .icon-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .icon-title {
+            margin-top: 5px;
+            font-size: 22px;
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            border-bottom: none;
+        }
+        .footer-area {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-image: url('pic/beijing.jpg');
+            background-repeat: repeat;
+           
+        }
+    </style>
+   
+</head>
+<body>
+
+    <div class="header">
+        <img src="pic/logo_touming.png" alt="Logo" class="header-img">
+        研发中心共享平台
+    </div>
+
+    <div class="icon-container">
+        <div class="row1">
+            <div class="icon-box">
+                <a href="http://semibg.siasun.com/zentao/user-login.html" target="_blank">
+                    <img src="pic/chandao.jpg" alt="项目管理系统">
+                    <div class="icon-title">禅道</div>
+                </a>
+            </div>
+            <div class="icon-box">
+                <a href="https://siasun.kdeascloud.com/eassso/login?service=http://siasun.kdeascloud.com:80/shr/" target="_blank">
+                    <img src="pic/jindie.jpg" alt="个人信息管理系统">
+                    <div class="icon-title">金蝶</div>
+                </a>
+            </div>
+            <div class="icon-box">
+                <a href="http://10.2.2.190:8090/" target="_blank">
+                    <img src="pic/gitlib.jpg" alt="gitlib">
+                    <div class="icon-title">Gitlib</div>
+                </a>
+            </div>
+            <div class="icon-box">
+                <a href="file:///X:/15研发中心" target="_blank">
+                    <img src="pic/wenjianjia.jpg" alt="共享文件">
+                    <div class="icon-title">研发中心文件</div>
+                </a>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="icon-box">
+                <!-- <a href="" target="_blank"> -->
+                <a href="#" target="_self">
+                    <img src="pic/jianshezhong.jpg" alt="未完待续">
+                    <div class="icon-title">建设中...</div>
+                </a>
+            </div>
+            <div class="icon-box">
+                <!-- <a href="" target="_blank"> -->
+                <a href="#" target="_self">
+                    <img src="pic/jianshezhong.jpg" alt="未完待续">
+                    <div class="icon-title">建设中...</div>
+                </a>
+            </div>
+            <div class="icon-box">
+                <!-- <a href="" target="_blank"> -->
+                <a href="#" target="_self">
+                    <img src="pic/jianshezhong.jpg" alt="未完待续">
+                    <div class="icon-title">建设中...</div>
+                </a>
+            </div>
+            <div class="icon-box">
+                <!-- <a href="" target="_blank"> -->
+                <a href="#" target="_self">
+                    <img src="pic/jianshezhong.jpg" alt="未完待续">
+                    <div class="icon-title">建设中...</div>
+                </a>
+            </div>
+        </div>
+    </div>
+     <!-- 新增底部区域 -->
+     <div class="footer-area"></div>
+    
+</body>
+</html>
